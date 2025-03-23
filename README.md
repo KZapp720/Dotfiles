@@ -112,7 +112,7 @@ The following script clones this repository to <b> <i> <span style="color: #75a5
 
 ```zsh
 rm -rf $XDG_CONFIG_HOME
-git clone <this-repo> $XDG_CONFIG_HOME
+git clone https://github.com/KZapp720/Dotfiles $XDG_CONFIG_HOME
 ```
 </details>
 
