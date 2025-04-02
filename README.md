@@ -65,6 +65,20 @@ defaults write com.apple.dock mru-spaces -bool false && killall Dock
 The following scripts add minimal configuration files to the <b> <i> <span style="color: #75a5f9;">$<span style="color: #fb7cb3;">HOME</span> </span> <i> <b> directory.
 
 
+<details> <summary> <b> $HOME/Cloud/ </b> </summary>
+
+```zsh
+ln -s "$HOME/Library/Mobile Documents/com~apple~CloudDocs" "$HOME/Cloud"
+```
+</details>
+
+<details> <summary> <b> $HOME/Pythonista/ </b> </summary>
+
+```zsh
+ln -s "$HOME/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents" "$HOME/Pythonista"
+```
+</details>
+
 <details> <summary> <b> $HOME/.ignore </b> </summary>
 
 ```zsh
