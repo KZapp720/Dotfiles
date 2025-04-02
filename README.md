@@ -53,10 +53,10 @@ defaults write -g AppleActionOnDoubleClick            -string Minimize && killal
 <details> <summary> <b> Third Party Applications </b> </summary>
 
 * [Auto Raise](https://github.com/sbmpost/AutoRaise/blob/master/AutoRaise.dmg)
-* Chat GPT
-* PostgreSQL
-* Better Touch Tool
-* Home Row
+* [Chat GPT](https://openai.com/chatgpt/download)
+* [PostgreSQL](https://enterprisedb.com/downloads/postgres-postgresql-downloads)
+* [Better Touch Tool](https://folivora.ai/downloads)
+* [Home Row](https://homerow.app)
 * Scroll
 * Supercharge
 </details>
