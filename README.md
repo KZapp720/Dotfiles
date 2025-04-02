@@ -28,9 +28,18 @@ This repository holds all the configurations for my personal setup. This reposit
 
 # System Defaults
 The following scripts change ***System Settings*** towards my preferances and lists ***First Party*** and ***Third Party*** DMG links to download.
-<details> <summary> <b> System Settings </b> </summary>
+<details> <summary> <b> Desktop & Dock </b> </summary>
 
-* TBA
+```zsh
+defaults write com.apple.dock tilesize -int 96 && killall Dock
+defaults write com.apple.dock magnification -bool true && defaults write com.apple.dock largesize -int 128 && killall Dock
+defaults write com.apple.dock mineffect -string scale && killall Dock
+defaults write -g AppleActionOnDoubleClick -string Minimize && killall Dock && killall Finder && killall Terminal && killall SystemUIServer
+defaults write com.apple.dock minimize-to-application -bool true && killall Dock
+defaults write com.apple.dock autohide -bool true && killall Dock
+defaults write com.apple.dock show-recents -bool false && killall Dock
+defaults write com.apple.dock mru-spaces -bool false && killall Dock
+```zsh
 </details>
 
 <details> <summary> <b> First Party Applications </b> </summary>
