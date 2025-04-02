@@ -39,7 +39,7 @@ defaults write com.apple.dock minimize-to-application -bool true && killall Dock
 defaults write com.apple.dock autohide -bool true && killall Dock
 defaults write com.apple.dock show-recents -bool false && killall Dock
 defaults write com.apple.dock mru-spaces -bool false && killall Dock
-```zsh
+```
 </details>
 
 <details> <summary> <b> First Party Applications </b> </summary>
