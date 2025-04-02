@@ -51,7 +51,7 @@ defaults write com.apple.dock mru-spaces -bool false && killall Dock
 
 <details> <summary> <b> Third Party Applications </b> </summary>
 
-* Auto Raise
+* [https://github.com/sbmpost/AutoRaise/blob/master/AutoRaise.dmg](Auto Raise)
 * Chat GPT
 * PostgreSQL
 * Better Touch Tool
