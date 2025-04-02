@@ -31,14 +31,15 @@ The following scripts change ***System Settings*** towards my preferances and li
 <details> <summary> <b> Desktop & Dock </b> </summary>
 
 ```zsh
-defaults write com.apple.dock tilesize -int 96 && killall Dock
-defaults write com.apple.dock magnification -bool true && defaults write com.apple.dock largesize -int 128 && killall Dock
-defaults write com.apple.dock mineffect -string scale && killall Dock
-defaults write -g AppleActionOnDoubleClick -string Minimize && killall Dock && killall Finder && killall Terminal && killall SystemUIServer
-defaults write com.apple.dock minimize-to-application -bool true && killall Dock
-defaults write com.apple.dock autohide -bool true && killall Dock
-defaults write com.apple.dock show-recents -bool false && killall Dock
-defaults write com.apple.dock mru-spaces -bool false && killall Dock
+defaults write com.apple.dock mru-spaces              -bool   false    && killall Dock
+defaults write com.apple.dock show-recents            -bool   false    && killall Dock
+defaults write com.apple.dock autohide                -bool   true     && killall Dock
+defaults write com.apple.dock magnification           -bool   true     && killall Dock
+defaults write com.apple.dock minimize-to-application -bool   true     && killall Dock
+defaults write com.apple.dock tilesize                -int    96       && killall Dock
+defaults write com.apple.dock largesize               -int    128      && killall Dock
+defaults write com.apple.dock mineffect               -string scale    && killall Dock
+defaults write -g AppleActionOnDoubleClick            -string Minimize && killall Dock && killall Finder && killall Terminal && killall SystemUIServer
 ```
 </details>
 
@@ -51,7 +52,7 @@ defaults write com.apple.dock mru-spaces -bool false && killall Dock
 
 <details> <summary> <b> Third Party Applications </b> </summary>
 
-* (https://github.com/sbmpost/AutoRaise/blob/master/AutoRaise.dmg)[Auto Raise]
+* [Auto Raise](https://github.com/sbmpost/AutoRaise/blob/master/AutoRaise.dmg)
 * Chat GPT
 * PostgreSQL
 * Better Touch Tool
