@@ -45,10 +45,10 @@ defaults write -g AppleActionOnDoubleClick            -string Minimize && killal
 
 <details> <summary> <b> First Party Applications </b> </summary>
 
-* [Final Cut Pro](https://apps.apple.com/us/app/final-cut-pro)
-* [Logic Pro](https://apps.apple.com/us/app/logic-pro)
-* [Stockfisk](https://apps.apple.com/us/app/stockfish-chess)
-* [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
+* [Final Cut Pro](https://apps.apple.com/us/app/final-cut-pro/id424389933)
+* [Logic Pro](https://apps.apple.com/us/app/logic-pro/id634148309)
+* [Stockfisk](https://apps.apple.com/us/app/stockfish-chess/id801463932)
+* [Xcode](https://apps.apple.com/us/app/xcode/id497799835)
 </details>
 
 <details> <summary> <b> Third Party Applications </b> </summary>
