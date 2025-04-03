@@ -31,14 +31,14 @@ The following scripts change ***System Settings*** towards my preferances and li
 <details> <summary> <b> Desktop & Dock </b> </summary>
 
 ```zsh
-defaults write com.apple.dock mru-spaces              -bool   false    && killall Dock;
-defaults write com.apple.dock show-recents            -bool   false    && killall Dock;
-defaults write com.apple.dock autohide                -bool   true     && killall Dock;
-defaults write com.apple.dock magnification           -bool   true     && killall Dock;
-defaults write com.apple.dock minimize-to-application -bool   true     && killall Dock;
-defaults write com.apple.dock tilesize                -int    96       && killall Dock;
-defaults write com.apple.dock largesize               -int    128      && killall Dock;
-defaults write com.apple.dock mineffect               -string scale    && killall Dock;
+defaults write com.apple.dock mru-spaces              -bool   false    &&
+defaults write com.apple.dock show-recents            -bool   false    &&
+defaults write com.apple.dock autohide                -bool   true     &&
+defaults write com.apple.dock magnification           -bool   true     &&
+defaults write com.apple.dock minimize-to-application -bool   true     &&
+defaults write com.apple.dock tilesize                -int    96       &&
+defaults write com.apple.dock largesize               -int    128      &&
+defaults write com.apple.dock mineffect               -string scale    &&
 defaults write -g AppleActionOnDoubleClick            -string Minimize && killall Dock && killall Finder && killall SystemUIServer;
 ```
 </details>
