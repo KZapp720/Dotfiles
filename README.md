@@ -53,12 +53,9 @@ defaults write -g AppleActionOnDoubleClick            -string Minimize && killal
 
 <details> <summary> <b> Third Party Applications </b> </summary>
 
-* [Auto Raise](https://github.com/sbmpost/AutoRaise/blob/master/AutoRaise.dmg)
 * [PostgreSQL](https://postgresapp.com/downloads.html)
-* [Home Row](https://homerow.app)
 * Scroll
 * Supercharge
-* [Zed](https://zen-browser.app/download)
 </details>
 
 
@@ -180,11 +177,14 @@ brew install zoxide
 brew install alt-tab
 brew install bettertouchtool
 brew install chatgpt
+brew install dimentium/autoraise/autoraiseapp
+brew install homerow
 brew install karabiner-elements
 brew install nikitabobko/tap/aerospace
 brew install pearcleaner
 brew install raycast
 brew install wezterm
+brew install zen-browser
 ```
 </details>
 
