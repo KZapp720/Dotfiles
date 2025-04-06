@@ -54,9 +54,7 @@ defaults write -g AppleActionOnDoubleClick            -string Minimize && killal
 <details> <summary> <b> Third Party Applications </b> </summary>
 
 * [Auto Raise](https://github.com/sbmpost/AutoRaise/blob/master/AutoRaise.dmg)
-* [Chat GPT](https://openai.com/chatgpt/download)
 * [PostgreSQL](https://postgresapp.com/downloads.html)
-* [Better Touch Tool](https://folivora.ai/downloads)
 * [Home Row](https://homerow.app)
 * Scroll
 * Supercharge
@@ -180,7 +178,8 @@ brew install zoxide
 
 ```zsh
 brew install alt-tab
-brew install arc
+brew install bettertouchtool
+brew install chatgpt
 brew install karabiner-elements
 brew install nikitabobko/tap/aerospace
 brew install pearcleaner
