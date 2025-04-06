@@ -40,6 +40,7 @@ defaults write com.apple.dock tilesize                -int    96       &&
 defaults write com.apple.dock largesize               -int    128      &&
 defaults write com.apple.dock mineffect               -string scale    &&
 defaults write -g AppleActionOnDoubleClick            -string Minimize && killall Dock && killall Finder && killall SystemUIServer;
+defaults write com.apple.TextEdit NSShowAppCentricOpenPanelInsteadOfUntitledFile -bool false && defaults write com.apple.TextEdit RichText -int 0 && killall TextEdit
 ```
 </details>
 
