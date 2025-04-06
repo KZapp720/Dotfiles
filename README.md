@@ -60,6 +60,7 @@ defaults write -g AppleActionOnDoubleClick            -string Minimize && killal
 * [Home Row](https://homerow.app)
 * Scroll
 * Supercharge
+* [Zed](https://zen-browser.app/download)
 </details>
 
 
@@ -180,8 +181,7 @@ brew install zoxide
 ```zsh
 brew install alt-tab
 brew install arc
-brew install karabiner-elements              
-brew install mactex-no-gui
+brew install karabiner-elements
 brew install nikitabobko/tap/aerospace
 brew install pearcleaner
 brew install raycast
