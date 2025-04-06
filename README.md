@@ -178,11 +178,11 @@ brew install zoxide
 <details> <summary> <span style="font-size: 16px;"> <b> Homebrew Casks </b> </span> </summary>
 
 ```zsh
-brew install aerospace
 brew install alt-tab
 brew install arc
 brew install karabiner-elements              
 brew install mactex-no-gui
+brew install nikitabobko/tap/aerospace
 brew install pearcleaner
 brew install raycast
 brew install wezterm
