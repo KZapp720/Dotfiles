@@ -168,7 +168,8 @@ brew install starship
 brew install typst
 brew install yazi
 brew install yq
-brew install zoxide   
+brew install zoxide
+brew install zsh-autosuggestions
 ```
 </details>
 
@@ -188,6 +189,15 @@ brew install pearcleaner
 brew install raycast
 brew install wezterm
 brew install zen-browser
+```
+</details>
+
+
+<details> <summary> <span style="font-size: 16px;"> <b> Developer Tools </b> </span> </summary>
+
+```zsh
+brew install rust rust-anaylzer
+brew install ghc  haskell-language-server
 ```
 </details>
 
