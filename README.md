@@ -36,6 +36,7 @@ defaults write com.apple.dock show-recents            -bool   false    &&
 defaults write com.apple.dock autohide                -bool   true     &&
 defaults write com.apple.dock magnification           -bool   true     &&
 defaults write com.apple.dock minimize-to-application -bool   true     &&
+defaults write com.apple.dock expose-group-apps       -bool   true     &&
 defaults write com.apple.dock tilesize                -int    96       &&
 defaults write com.apple.dock largesize               -int    128      &&
 defaults write com.apple.dock mineffect               -string scale    &&
