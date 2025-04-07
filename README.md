@@ -180,6 +180,7 @@ brew install alt-tab
 brew install bettertouchtool
 brew install chatgpt
 brew install dimentium/autoraise/autoraiseapp
+brew install font-fira-code-nerd-font
 brew install homerow
 brew install karabiner-elements
 brew install nikitabobko/tap/aerospace
