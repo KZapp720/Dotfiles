@@ -170,6 +170,7 @@ brew install yazi
 brew install yq
 brew install zoxide
 brew install zsh-autosuggestions
+brew install zsh-syntax-highlighting
 ```
 </details>
 
