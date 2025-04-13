@@ -56,8 +56,8 @@ defaults write com.apple.TextEdit NSShowAppCentricOpenPanelInsteadOfUntitledFile
 <details> <summary> <b> Third Party Applications </b> </summary>
 
 * [PostgreSQL](https://postgresapp.com/downloads.html)
-* Scroll
-* Supercharge
+* [Scroll](https://ryanhanson.dev/scroll)
+* [Supercharge](https://sindresorhus.com/supercharge)
 </details>
 
 
