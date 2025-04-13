@@ -49,7 +49,7 @@ defaults write com.apple.TextEdit NSShowAppCentricOpenPanelInsteadOfUntitledFile
 
 * [Final Cut Pro](https://apps.apple.com/us/app/final-cut-pro/id424389933)
 * [Logic Pro](https://apps.apple.com/us/app/logic-pro/id634148309)
-* [Stockfisk](https://apps.apple.com/us/app/stockfish-chess/id801463932)
+* [Stockfish](https://apps.apple.com/us/app/stockfish-chess/id801463932)
 * [Xcode](https://apps.apple.com/us/app/xcode/id497799835)
 </details>
 
