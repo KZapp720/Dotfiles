@@ -178,7 +178,7 @@ brew install zsh-syntax-highlighting
 <details> <summary> <span style="font-size: 16px;"> <b> Homebrew Casks </b> </span> </summary>
 
 ```zsh
-brew install alt-tab
+brew install arc
 brew install bettertouchtool
 brew install chatgpt
 brew install dimentium/autoraise/autoraiseapp
@@ -189,7 +189,6 @@ brew install nikitabobko/tap/aerospace
 brew install pearcleaner
 brew install raycast
 brew install wezterm
-brew install zen-browser
 ```
 </details>
 
