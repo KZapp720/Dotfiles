@@ -1,0 +1,11 @@
+helix/runtime/
+karabiner/assets/
+nushell/history.txt
+raycast/extensions
+vim/.viminfo
+zsh/.zsh_sessions/
+zsh/.zsh_historyi
+**/*.swp
+**/*~
+**/#*#
+.DS_Store
