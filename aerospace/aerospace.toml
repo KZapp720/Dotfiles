@@ -1,0 +1,87 @@
+start-at-login                                                  = true
+enable-normalization-flatten-containers                         = true
+enable-normalization-opposite-orientation-for-nested-containers = false
+
+after-startup-command                                           = "exec-and-forget borders blacklist=Dato style=round width=12"
+on-focus-changed                                                = "exec-and-forget f=$(aerospace list-windows --focused --format %{app-bundle-id} 2>/dev/null || echo none); [ $f != com.sindresorhus.Dato ] && aerospace move-mouse window-lazy-center"
+
+
+[gaps]
+	inner.horizontal        = 12
+	inner.vertical          = 12
+	
+	outer.top               = 12
+	outer.bottom            = 12
+	
+	outer.left              = 12
+	outer.right             = 12
+
+
+[mode.main.binding]
+# CTRL Bindings
+	ctrl-1                  = "workspace 1"
+	ctrl-2                  = "workspace 2"
+	ctrl-3                  = "workspace 3"
+	
+	ctrl-4                  = "workspace 4"
+	ctrl-5                  = "workspace 5"
+	ctrl-6                  = "workspace 6"
+	
+	ctrl-7                  = "workspace 7"
+	ctrl-8                  = "workspace 8"
+	ctrl-9                  = "workspace 9"
+	
+	ctrl-0                  = "balance-sizes"
+	ctrl-minus              = "resize smart -12"
+	ctrl-equal              = "resize smart +12"
+	
+	ctrl-leftSquareBracket  = "focus dfs-prev --boundaries workspace --boundaries-action wrap-around-the-workspace"
+	ctrl-rightSquareBracket = "focus dfs-next --boundaries workspace --boundaries-action wrap-around-the-workspace"
+	ctrl-backslash          = "layout floating tiling"
+	
+	ctrl-backtick           = "exec-and-forget aerospace fullscreen       && aerospace move-mouse window-force-center"
+	ctrl-semicolon          = "exec-and-forget (aerospace join-with left  && { aerospace move up   && while aerospace focus down --boundaries-action fail; do aerospace swap dfs-prev && aerospace focus dfs-next; done; } || aerospace move left ) && aerospace move-mouse window-force-center"
+	ctrl-quote              = "exec-and-forget (aerospace join-with right && { aerospace move down && while aerospace focus down --boundaries-action fail; do aerospace swap dfs-prev && aerospace focus dfs-next; done; } || aerospace move right) && aerospace move-mouse window-force-center"
+	
+	ctrl-comma              = "exec-and-forget aerospace macos-native-fullscreen                                      && aerospace move-mouse window-force-center"
+	ctrl-period             = "exec-and-forget aerospace fullscreen                                                   && aerospace move-mouse window-force-center"
+	ctrl-slash              = "exec-and-forget (aerospace focus-back-and-forth || aerospace workspace-back-and-forth) && aerospace move-mouse window-force-center"
+	
+	ctrl-up                 = "focus up    --boundaries workspace --boundaries-action wrap-around-the-workspace"
+	ctrl-down               = "focus down  --boundaries workspace --boundaries-action wrap-around-the-workspace"
+
+	ctrl-left               = "focus left  --boundaries workspace --boundaries-action wrap-around-the-workspace"
+	ctrl-right              = "focus right --boundaries workspace --boundaries-action wrap-around-the-workspace"
+
+# CTRL-ALT Bindings
+	# ctrl-alt-up             = ""
+	# ctrl-alt-down           = ""
+	
+	ctrl-alt-left           = "focus dfs-prev --boundaries workspace --boundaries-action wrap-around-the-workspace"
+	ctrl-alt-right          = "focus dfs-next --boundaries workspace --boundaries-action wrap-around-the-workspace"
+
+# CTRL-SHIFT Bindings
+	ctrl-shift-1            = ["move-node-to-workspace 1", "workspace 1"]
+	ctrl-shift-2            = ["move-node-to-workspace 2", "workspace 2"]
+	ctrl-shift-3            = ["move-node-to-workspace 3", "workspace 3"]
+
+	ctrl-shift-4            = ["move-node-to-workspace 4", "workspace 4"]
+	ctrl-shift-5            = ["move-node-to-workspace 5", "workspace 5"]
+	ctrl-shift-6            = ["move-node-to-workspace 6", "workspace 6"]
+
+	ctrl-shift-7            = ["move-node-to-workspace 7", "workspace 7"]
+	ctrl-shift-8            = ["move-node-to-workspace 8", "workspace 8"]
+	ctrl-shift-9            = ["move-node-to-workspace 9", "workspace 9"]
+
+	# ctrl-shift-up           = ""
+	# ctrl-shift-down         = ""
+	
+	# ctrl-shift-left         = ""
+	# ctrl-shift-right        = ""
+
+# CTRL-ALT-SHIFT Bindings	
+	# ctrl-alt-shift-up       = ""
+	# ctrl-alt-shift-down     = ""
+	
+	# ctrl-alt-shift-left     = ""
+	# ctrl-alt-shift-right    = ""
