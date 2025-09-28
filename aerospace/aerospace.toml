@@ -2,6 +2,7 @@ start-at-login                                                  = true
 enable-normalization-flatten-containers                         = true
 enable-normalization-opposite-orientation-for-nested-containers = false
 
+accordion-padding                                               = 36
 after-startup-command                                           = "exec-and-forget borders blacklist=Dato style=round width=12"
 on-focus-changed                                                = "exec-and-forget f=$(aerospace list-windows --focused --format %{app-bundle-id} 2>/dev/null || echo none); [ $f != com.sindresorhus.Dato ] && aerospace move-mouse window-lazy-center"
 
@@ -40,12 +41,12 @@ on-focus-changed                                                = "exec-and-forg
 	ctrl-backslash          = "layout floating tiling"
 
 	ctrl-backtick           = "exec-and-forget aerospace fullscreen && aerospace move-mouse window-force-center"
-	ctrl-semicolon          = "exec-and-forget ~/.config/aerospace/move_left.zsh"
-	ctrl-quote              = "exec-and-forget ~/.config/aerospace/move_right.zsh"
+	ctrl-semicolon          = "exec-and-forget if aerospace focus left  --boundaries-action fail && aerospace focus right --boundaries-action fail; then aerospace join-with left  && aerospace move up   && while aerospace move down --boundaries-action fail; do true; done || aerospace move left  --boundaries-action stop; else if aerospace focus up --boundaries-action fail; then aerospace focus down --boundaries-action fail && aerospace move left;  elif aerospace focus down --boundaries-action fail; then aerospace focus up --boundaries-action fail && aerospace move left;  fi; fi; aerospace move-mouse window-force-center"
+	ctrl-quote              = "exec-and-forget if aerospace focus right --boundaries-action fail && aerospace focus left  --boundaries-action fail; then aerospace join-with right && aerospace move down && while aerospace move down --boundaries-action fail; do true; done || aerospace move right --boundaries-action stop; else if aerospace focus up --boundaries-action fail; then aerospace focus down --boundaries-action fail && aerospace move right; elif aerospace focus down --boundaries-action fail; then aerospace focus up --boundaries-action fail && aerospace move right; fi; fi; aerospace move-mouse window-force-center"
 
-	ctrl-comma              = "exec-and-forget aerospace macos-native-fullscreen                                      && aerospace move-mouse window-force-center"
-	ctrl-period             = "exec-and-forget aerospace fullscreen                                                   && aerospace move-mouse window-force-center"
-	ctrl-slash              = "exec-and-forget (aerospace focus-back-and-forth || aerospace workspace-back-and-forth) && aerospace move-mouse window-force-center"
+	ctrl-comma              = "exec-and-forget if aerospace focus up --boundaries-action fail; then aerospace focus down && aerospace layout accordion v_tiles; elif aerospace focus down --boundaries-action fail; then aerospace focus up && aerospace layout accordion v_tiles; fi"
+	ctrl-period             = "exec-and-forget aerospace fullscreen                                                      && aerospace move-mouse window-force-center"
+	ctrl-slash              = "exec-and-forget (aerospace focus-back-and-forth || aerospace workspace-back-and-forth)    && aerospace move-mouse window-force-center"
 
 	ctrl-up                 = "focus up    --boundaries workspace --boundaries-action wrap-around-the-workspace"
 	ctrl-down               = "focus down  --boundaries workspace --boundaries-action wrap-around-the-workspace"
@@ -76,8 +77,8 @@ on-focus-changed                                                = "exec-and-forg
 	ctrl-shift-up           = "exec-and-forget aerospace move up   --boundaries-action fail && aerospace move-mouse window-force-center"
 	ctrl-shift-down         = "exec-and-forget aerospace move down --boundaries-action fail && aerospace move-mouse window-force-center"
 
-	ctrl-shift-left         = "exec-and-forget ~/.config/aerospace/move_left.zsh"
-	ctrl-shift-right        = "exec-and-forget ~/.config/aerospace/move_right.zsh"
+	ctrl-shift-left         = "exec-and-forget if aerospace focus left  --boundaries-action fail && aerospace focus right --boundaries-action fail; then aerospace join-with left  && aerospace move up   && while aerospace move down --boundaries-action fail; do true; done || aerospace move left  --boundaries-action stop; else if aerospace focus up --boundaries-action fail; then aerospace focus down --boundaries-action fail && aerospace move left;  elif aerospace focus down --boundaries-action fail; then aerospace focus up --boundaries-action fail && aerospace move left;  fi; fi; aerospace move-mouse window-force-center"
+	ctrl-shift-right        = "exec-and-forget if aerospace focus right --boundaries-action fail && aerospace focus left  --boundaries-action fail; then aerospace join-with right && aerospace move down && while aerospace move down --boundaries-action fail; do true; done || aerospace move right --boundaries-action stop; else if aerospace focus up --boundaries-action fail; then aerospace focus down --boundaries-action fail && aerospace move right; elif aerospace focus down --boundaries-action fail; then aerospace focus up --boundaries-action fail && aerospace move right; fi; fi; aerospace move-mouse window-force-center"
 
 # CTRL-ALT-SHIFT Bindings
 	ctrl-alt-shift-up       = "swap dfs-prev"
@@ -85,3 +86,4 @@ on-focus-changed                                                = "exec-and-forg
 
 	ctrl-alt-shift-left     = "swap left"
 	ctrl-alt-shift-right    = "swap right"
+
