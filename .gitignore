@@ -1,0 +1,12 @@
+helix/runtime/
+karabiner/assets/
+nushell/history.txt
+raycast/ai/
+raycast/extensions/
+vim/.viminfo
+zed/conversations/
+zed/prompts/
+zed/themes/
+zsh/.zsh_history
+zsh/.zsh_sessions/
+.DS_Store
